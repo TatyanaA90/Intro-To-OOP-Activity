@@ -11,12 +11,7 @@ class Student:
         return self.classes
 
     def get_num_classes(self):
-        num_classes = 0
-
-        for student_class in self.classes:
-            num_classes += 1
-        
-        return num_classes
+        return len(self.classes)
     
     def summary(self):
         return f"{self.name.capitalize()} is a {self.grade} in {self.get_num_classes()} classes"
