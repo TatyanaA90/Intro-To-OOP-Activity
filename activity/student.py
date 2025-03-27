@@ -1,8 +1,8 @@
 # add your Student class here!
 class Student:
-  def __init__(self, name, year_in_college, courses):
+  def __init__(self, name, grade, courses):
     self.name = name
-    self.year_in_college = year_in_college
+    self.grade = grade
     self.courses = courses
   
   def add_class(self, class_name):
@@ -14,6 +14,6 @@ class Student:
 
   def summary(self):
     num_courses = self.get_num_classes()
-    print(f"{self.name} is a {self.year_in_college} enrolled in {num_courses} classes")
+    print(f"{self.name} is a {self.grade} enrolled in {num_courses} classes")
 
 

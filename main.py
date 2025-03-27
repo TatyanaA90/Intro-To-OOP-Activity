@@ -5,8 +5,10 @@ from activity.comparison import get_student_with_more_classes
 samara = Student( "Samara", "junior", [ "Pre-Calc", "English III", "World History", "Gym", "Chemistry", "Music Composition" ] )
 
 samara.add_class("Painting")  # => [ "Pre-Calc", "English III", "World History", "Gym", "Chemistry", "Music Composition", "Painting" ]
+print(samara.add_class("Painting"))
 
 samara.get_num_classes()  # => 7
+print(f"Samara has: {samara.get_num_classes()} classes")
 
 samara.summary()  # => "Samara is a junior enrolled in 7 classes"
 
@@ -21,3 +23,4 @@ claire.summary()  # => "Claire is a freshman enrolled in 6 classes"
 
 # function
 get_student_with_more_classes(claire, samara)  # => samara
+print(get_student_with_more_classes(claire, samara))
